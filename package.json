@@ -1,39 +1,26 @@
 {
   "name": "nodejsexamples",
   "version": "1.0.0",
-  "description": "This Project explains all Node JS examples",
+  "description": "Node.js app with Express, Docker, SonarQube and CI/CD",
   "main": "app.js",
-  "publishConfig": {
-    "registry": "http://172.21.40.70:8081/repository/nodejs-repo/"
-  },
-  
   "scripts": {
     "server": "http-server -c-1 -p 9999",
     "start1": "nodemon app.js",
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-     "sonar": "node sonar-project.js"
+    "sonar": "node sonar-project.js"
   },
   "dependencies": {
     "cfenv": "^1.1.0",
-    "express": "^4.16.4"
+    "express": "^4.18.2"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9",
+    "nodemon": "^2.0.22",
     "sonarqube-scanner": "^2.7.0"
   },
   "engines": {
-    "node": "v10.6.0"
+    "node": ">=18.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "http://172.21.40.70:8081/repository/nodejsproject/"
-  },
-  "keywords": [
-    "node",
-    "Ramu",
-    "express"
-  ],
   "author": "Ramu T",
   "license": "RT"
 }
